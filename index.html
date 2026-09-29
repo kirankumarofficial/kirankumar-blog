@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kiran Kumar | Personal Blog</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Kiran Kumar</div>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+        <nav id="navbar">
+            <a href="#home" onclick="closeMenu()">Home</a>
+            <a href="#about" onclick="closeMenu()">About</a>
+            <a href="#education" onclick="closeMenu()">Education</a>
+            <a href="#skills" onclick="closeMenu()">Skills</a>
+            <a href="#projects" onclick="closeMenu()">Projects</a>
+            <a href="#blogs" onclick="closeMenu()">Blogs</a>
+            <a href="#goals" onclick="closeMenu()">Goals</a>
+            <a href="#contact" onclick="closeMenu()">Contact</a>
+
+            <button class="dark-btn" onclick="toggleDarkMode()">🌙</button>
+        </nav>
+    </header>
+
+
+    <!-- Home -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm <span>Kiran Kumar</span></h1>
+
+            <h2>Student | Programmer | Future Developer</h2>
+
+            <p>
+                Welcome to my personal blogging website.
+                I share my learning journey, programming knowledge,
+                projects and experiences here.
+            </p>
+
+            <a href="#about" class="btn">Explore My Website</a>
+        </div>
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+
+        <div class="about-box">
+            <p>
+                Hello! My name is <strong>Kiran Kumar</strong>.
+                I am a student interested in technology, programming
+                and web development.
+            </p>
+
+            <p>
+                I enjoy learning new technologies and creating simple
+                projects using programming languages and web technologies.
+            </p>
+
+            <p>
+                This website is my personal space where I can share
+                my learning journey, projects, ideas and achievements.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Education -->
+    <section id="education" class="section">
+        <h2>Education</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Engineering</h3>
+                <p>
+                    Currently pursuing engineering and learning
+                    programming, databases, web development and
+                    computer science concepts.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Technical Learning</h3>
+                <p>
+                    Learning HTML, CSS, JavaScript, Python, Java,
+                    C programming, SQL and Data Structures.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Future Learning</h3>
+                <p>
+                    Interested in learning advanced web development,
+                    software development and modern technologies.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <h2>My Skills</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>HTML</h3>
+                <p>
+                    Creating the structure and content of websites
+                    using HTML.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>CSS</h3>
+                <p>
+                    Designing websites using colors, layouts,
+                    animations and responsive design.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>JavaScript</h3>
+                <p>
+                    Adding interactivity and dynamic features
+                    to websites.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Java</h3>
+                <p>
+                    Learning object-oriented programming and
+                    application development using Java.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Python</h3>
+                <p>
+                    Using Python for programming, problem solving
+                    and basic data processing.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>SQL</h3>
+                <p>
+                    Working with databases and writing SQL queries
+                    to manage data.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Personal Blog Website</h3>
+                <p>
+                    A responsive personal blogging website created
+                    using HTML, CSS and JavaScript.
+                </p>
+
+                <button onclick="showProject('Personal Blog Website')">
+                    View Project
+                </button>
+            </div>
+
+            <div class="card">
+                <h3>Student Management System</h3>
+                <p>
+                    A simple project idea for managing student
+                    information, marks and other details.
+                </p>
+
+                <button onclick="showProject('Student Management System')">
+                    View Project
+                </button>
+            </div>
+
+            <div class="card">
+                <h3>Registration Form</h3>
+                <p>
+                    A frontend registration form with input fields
+                    and JavaScript validation.
+                </p>
+
+                <button onclick="showProject('Registration Form')">
+                    View Project
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Blogs -->
+    <section id="blogs" class="section">
+        <h2>My Blogs</h2>
+
+        <input
+            type="text"
+            id="searchBlog"
+            placeholder="Search blogs..."
+            onkeyup="searchBlogs()"
+        >
+
+        <div class="cards" id="blogContainer">
+
+            <div class="card blog-card">
+                <h3>My Programming Journey</h3>
+
+                <p>
+                    My journey of learning programming and
+                    developing problem-solving skills.
+                </p>
+
+                <button onclick="readBlog('Programming Journey')">
+                    Read More
+                </button>
+            </div>
+
+
+            <div class="card blog-card">
+                <h3>Why Learn Web Development?</h3>
+
+                <p>
+                    Web development is an interesting field where
+                    we can create useful websites and applications.
+                </p>
+
+                <button onclick="readBlog('Web Development')">
+                    Read More
+                </button>
+            </div>
+
+
+            <div class="card blog-card">
+                <h3>Importance of Technology</h3>
+
+                <p>
+                    Technology plays an important role in education,
+                    communication and modern life.
+                </p>
+
+                <button onclick="readBlog('Technology')">
+                    Read More
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Future Goals -->
+    <section id="goals" class="section">
+        <h2>My Future Goals</h2>
+
+        <div class="goals-box">
+
+            <p>🎯 Improve my programming skills.</p>
+
+            <p>🎯 Become a good software developer.</p>
+
+            <p>🎯 Learn advanced web development.</p>
+
+            <p>🎯 Create useful and innovative projects.</p>
+
+            <p>🎯 Keep learning new technologies.</p>
+
+        </div>
+    </section>
+
+
+    <!-- Achievements -->
+    <section id="achievements" class="section">
+        <h2>My Achievements</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Programming Practice</h3>
+                <p>
+                    Practicing programming problems and improving
+                    logical thinking.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Project Development</h3>
+                <p>
+                    Creating small academic and personal projects
+                    using programming and web technologies.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Continuous Learning</h3>
+                <p>
+                    Learning new concepts and technologies
+                    regularly.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+
+        <h2>Contact Me</h2>
+
+        <p>
+            If you would like to contact me, you can use
+            the details below.
+        </p>
+
+
+        <div class="contact-box">
+
+            <h3>Kiran Kumar</h3>
+
+            <p>
+                <strong>Name:</strong>
+                Kiran Kumar
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+
+                <a href="mailto:sallakirankumar2007@gmail.com">
+                    sallakirankumar2007@gmail.com
+                </a>
+            </p>
+
+        </div>
+
+
+        <!-- Frontend Contact Form -->
+        <form id="contactForm">
+
+            <h3>Send a Message</h3>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <textarea
+                id="message"
+                placeholder="Your Message"
+                rows="6"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            © 2026 Kiran Kumar. All Rights Reserved.
+        </p>
+
+        <p>
+            Personal Blog Website
+        </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
